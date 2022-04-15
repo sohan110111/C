@@ -19,15 +19,25 @@ int pop_array() {
     return -1;
 }
 int peek_array() {
-
+    if (top >= 0)
+    {
+        printf("Peek top-eleemnt from stack : %d\n", arrayStack[top]);
+    } else
+    {
+        printf("Array stack is empty");
+    }
+    
+    
     return -1;
 }
 int main() {
     printf("Implementing stack in C programming.\n");
+    peek_array();
     push_array(10);
     push_array(20);
     push_array(30);
     push_array(40);
+    peek_array(); // peek all return top value of stack
 
     return 0;
 }
