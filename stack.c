@@ -46,12 +46,11 @@ int main() {
     push_array(10);
     push_array(20);
     push_array(30);
+    pop_array();
     push_array(40);
-    peek_array(); // peek all return top value of stack
-    pop_array();
-    pop_array();
-    pop_array();
-    pop_array();
+    peek_array(); // peek return top value of stack here 40
+    pop_array(); // 40
+    pop_array(); // 20
 
     return 0;
 }
