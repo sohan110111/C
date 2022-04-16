@@ -16,6 +16,12 @@ void push_array(int element) {
     
 }
 int pop_array() {
+    if (top >= 0)
+    {
+        printf("Pop element from stack %d\n", arrayStack[top]);
+        top = top - 1;
+    }
+    
     return -1;
 }
 int peek_array() {
@@ -38,6 +44,8 @@ int main() {
     push_array(30);
     push_array(40);
     peek_array(); // peek all return top value of stack
+    pop_array();
+    pop_array();
 
     return 0;
 }
