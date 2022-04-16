@@ -20,7 +20,11 @@ int pop_array() {
     {
         printf("Pop element from stack %d\n", arrayStack[top]);
         top = top - 1;
+    }else
+    {
+        printf("Empty element in stack");
     }
+    
     
     return -1;
 }
@@ -44,6 +48,8 @@ int main() {
     push_array(30);
     push_array(40);
     peek_array(); // peek all return top value of stack
+    pop_array();
+    pop_array();
     pop_array();
     pop_array();
 
