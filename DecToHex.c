@@ -28,7 +28,7 @@ int main()
         }
     }
     printf("Hexadecimal value : ");
-    // This is for inter part
+    // This is for integer part
     for (i = i - 1; i >= 0; i--)
     {
         if (array[i] <= 9)
