@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int main() {
     struct Car {
         char brandName[100];
         char owner[100];
         int price;
     };
-
+    
+int main() {
 
     struct Car car1 = {"Tesla", "Rakib", 78000};
     struct Car car2 = {"Ford", "Musfiq", 75000};
