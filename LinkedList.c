@@ -31,6 +31,6 @@ int main() {
         printf("%d -> ", list -> data);
         list = list->next;
     }
-
+    printf("\nsize of struct %d\n", sizeof(struct LinkedList));
     return 0;
 }
