@@ -47,14 +47,14 @@ int main() {
 
     int array[] = {0,1,2,3,4,5,6};
     struct node *head = linkedlist_insert(array, sizeof(array)/sizeof(array[0]));
-    // while (head != NULL) {
-    //     printf("%d -> ", head->data);
-    //     head = head->next;
-    // }
+    struct node *newHead = head;
+    while (head != NULL) {
+        printf("%d -> ", head->data);
+        head = head->next;
+    }
 
-    // printf("NULL");
-    //int searchValue = 5;
-    //struct node *current = head;
+    printf("NULL");
+    int searchValue = 5;
 
     printf("\nvalue of position is %d", indexSearch(head, 5));
     
