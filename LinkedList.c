@@ -30,6 +30,7 @@ int main() {
         
         printf("%d -> ", list -> data);
         list = list->next;
+        printf("\n address of nest node : %d\n", list);
     }
     printf("\nsize of struct %d\n", sizeof(struct LinkedList));
     return 0;
